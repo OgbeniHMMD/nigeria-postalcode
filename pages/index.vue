@@ -1,57 +1,59 @@
 <template>
   <div
-    class="d-flex justify-content-center align-items-center min-vh-100 border-primary border-bottom text-center m-0 my-auto"
+    class="d-flex justify-content-center align-item-center min-vh-100 border-primary border-bottom text-center m-0 my-auto"
   >
-    <div>
-      <logo />
-      <h1 class="title">postalcode</h1>
-      <h2 class="subtitle">Nigeria&#39;s Postal Code Finder</h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="btn btn-lg btn-outline-success mr-3"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="btn btn-lg btn-outline-success"
-        >GitHub</a>
+    <div class="container border border-dark m-2">
+      <div class="p-2 p-md-5">
+        <div class="title h2 mb-5">Nigeria's Postal Code Finder</div>
+        {{ nigeria.state }}
+        <div class="form-row p-0">
+          {{state}}
+          <div class="col-12 col-md-6 mb-3">
+            <select id="state" class="form-control form-control-lg border-dark" required>
+              <option value disabled selected hidden>State</option>
+              <template v-for="item in nigeria">
+                <option
+                  :key="item.state.postalcode"
+                  :value="item.state.name"
+                >{{item.state.name}} / {{item.state.postalCode}}</option>
+                {{state = item.state}}
+              </template>
+            </select>
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <select id="lga" class="form-control form-control-lg border-dark" required>
+              <option value disabled selected hidden>L.G.A</option>
+              <option
+                v-for="lga in state.lga"
+                :key="lga.postalcode"
+                :value="lga.postalcode"
+              >{{lga.name}} / {{lga.postalCode}}</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
+import nigeria from "~/assets/JSON/nigeria.json";
 
 export default {
-  components: {
-    Logo
+  data: function() {
+    return {
+      nigeria,
+      state: "",
+      lga: "",
+      output: ""
+    };
   }
 };
 </script>
 
 <style>
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.border,
+.form-control {
+  border-width: 2px !important;
 }
 </style>
