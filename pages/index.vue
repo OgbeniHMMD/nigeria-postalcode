@@ -1,9 +1,12 @@
 <template>
   <div class="d-flex justify-content-center align-items-center text-center min-vh-100 m-0 my-auto">
     <div class="container m-2">
-      <div class="border border-dark p-2 p-md-5">
-        <div v-if="!postalCode" class="h2 mb-5">Nigeria's Postal Code Finder</div>
-        <div v-else class="h2 mb-5">Postal Code: {{postalCode}}</div>
+      <div>
+        <div
+          class="alert p-4 mb-4"
+          :class="alert.type ? alert.type : 'alert-danger'"
+          v-html="alert.message ? alert.message : 'Select Your State'"
+        ></div>
 
         <div class="form-row p-0">
           <div class="col-12 col-md-6 mb-3">
@@ -11,7 +14,7 @@
               required
               id="state"
               v-model="selectedState"
-              @change="clearVariables"
+              @change="showAlert('alert-warning', 'Select Your L.G.A')"
               class="form-control form-control-lg border-dark"
             >
               <option value disabled selected hidden>Select State</option>
@@ -26,6 +29,7 @@
               id="lga"
               required
               v-model="postalCode"
+              @change="showAlert('alert-success', `Your Postal Code Is: <strong>${postalCode}</strong>`)"
               class="form-control form-control-lg border-dark"
             >
               <option value disabled selected hidden>Select L.G.A</option>
@@ -51,13 +55,16 @@ export default {
     return {
       nigeria,
       selectedState: "",
-      postalCode: ""
+      postalCode: "",
+
+      showPostal: "",
+      alert: []
     };
   },
   methods: {
-    clearVariables() {
-      this.postalCode = "";
-      //this.postalCode = nigeria[this.selectedState]
+    showAlert(type, msg) {
+      this.alert.type = type;
+      this.alert.message = msg;
     }
   }
 };
@@ -65,8 +72,15 @@ export default {
 
 
 <style>
+.alert,
 .border,
 .form-control {
-  border-width: 2px !important;
+  //border-width: 2px !important;
+}
+
+body {
+  background-color: #078700;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 </style>
