@@ -3,9 +3,8 @@
     <div class="container m-2">
       <div>
         <div
-          class="alert p-4 mb-4"
-          :class="alert.type ? alert.type : 'alert-danger'"
-          v-html="alert.message ? alert.message : 'Select Your State'"
+          class="border border-white text-white h4 p-4 mb-4"
+          v-html="alert ? alert : 'Select Your State'"
         ></div>
 
         <div class="form-row p-0">
@@ -14,8 +13,8 @@
               required
               id="state"
               v-model="selectedState"
-              @change="showAlert('alert-warning', 'Select Your L.G.A')"
-              class="form-control form-control-lg border-dark"
+              @change="(alert = 'Select Your Local Govt. Area')"
+              class="form-control form-control-lg border-outline-light rounded-0"
             >
               <option value disabled selected hidden>Select State</option>
               <template v-for="(states, index) in nigeria">
@@ -29,14 +28,14 @@
               id="lga"
               required
               v-model="postalCode"
-              @change="showAlert('alert-success', `Your Postal Code Is: <strong>${postalCode}</strong>`)"
-              class="form-control form-control-lg border-dark"
+              class="form-control form-control-lg border-light rounded-0"
+              @change="(alert = `Your Postal Code Is: <strong>${postalCode}</strong>`)"
             >
               <option value disabled selected hidden>Select L.G.A</option>
               <option
-                v-for="(lga, index) in nigeria[+selectedState].state.lga"
                 :key="index"
-                :value="++index"
+                :value="lga.postalCode"
+                v-for="(lga, index) in nigeria[+selectedState].state.lga"
               >{{lga.name}}</option>
             </select>
           </div>
@@ -54,18 +53,10 @@ export default {
   data: function() {
     return {
       nigeria,
-      selectedState: "",
+      alert: "",
       postalCode: "",
-
-      showPostal: "",
-      alert: []
+      selectedState: ""
     };
-  },
-  methods: {
-    showAlert(type, msg) {
-      this.alert.type = type;
-      this.alert.message = msg;
-    }
   }
 };
 </script>
@@ -75,12 +66,12 @@ export default {
 .alert,
 .border,
 .form-control {
-  //border-width: 2px !important;
+  border-width: 2px !important;
 }
 
 body {
-  background-color: #078700;
-  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+  background-color: #008751;
+  background-image: url("/gradient-squares.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 </style>
