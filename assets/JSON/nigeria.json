@@ -2,27 +2,27 @@
   {
     "state": {
       "name": "Abia State",
-      "postalCode": 1,
+      "postalCode": 440001,
       "lga": [
         {
           "name": "Aba South",
-          "postalCode": 1
+          "postalCode": 440001
         },
         {
           "name": "Arochukwu",
-          "postalCode": 2
+          "postalCode": 440001
         },
         {
           "name": "Bende",
-          "postalCode": 3
+          "postalCode": 440001
         },
         {
           "name": "Ikwuano",
-          "postalCode": 4
+          "postalCode": 440001
         },
         {
           "name": "Isiala Ngwa North",
-          "postalCode": 5
+          "postalCode": 440001
         },
         {
           "name": "Isiala Ngwa South",
@@ -74,7 +74,7 @@
   {
     "state": {
       "name": "Adamawa State",
-      "postalCode": 2,
+      "postalCode": 640001,
       "lga": [
         {
           "name": "Fufure",
@@ -162,7 +162,7 @@
   {
     "state": {
       "name": "Akwa Ibom State",
-      "postalCode": 3,
+      "postalCode": 520001,
       "lga": [
         {
           "name": "Eastern Obolo",
@@ -290,7 +290,7 @@
   {
     "state": {
       "name": "Anambra State",
-      "postalCode": 4,
+      "postalCode": 420001,
       "lga": [
         {
           "name": "Anambra East",
@@ -378,7 +378,7 @@
   {
     "state": {
       "name": "Bauchi State",
-      "postalCode": 5,
+      "postalCode": 740001,
       "lga": [
         {
           "name": "Bauchi",
@@ -462,7 +462,7 @@
   {
     "state": {
       "name": "Bayelsa State",
-      "postalCode": 6,
+      "postalCode": 561001,
       "lga": [
         {
           "name": "Ekeremor",
@@ -498,7 +498,7 @@
   {
     "state": {
       "name": "Benue State",
-      "postalCode": 7,
+      "postalCode": 970001,
       "lga": [
         {
           "name": "Apa",
@@ -594,7 +594,7 @@
   {
     "state": {
       "name": "Borno State",
-      "postalCode": 8,
+      "postalCode": 600001,
       "lga": [
         {
           "name": "Askira\/Uba",
@@ -706,7 +706,7 @@
   {
     "state": {
       "name": "Cross River State",
-      "postalCode": 9,
+      "postalCode": 540001,
       "lga": [
         {
           "name": "Akamkpa",
@@ -782,7 +782,7 @@
   {
     "state": {
       "name": "Delta State",
-      "postalCode": 10,
+      "postalCode": 320001,
       "lga": [
         {
           "name": "Aniocha South",
@@ -886,7 +886,7 @@
   {
     "state": {
       "name": "Ebonyi State",
-      "postalCode": 11,
+      "postalCode": 840001,
       "lga": [
         {
           "name": "Afikpo North",
@@ -942,7 +942,7 @@
   {
     "state": {
       "name": "Edo State",
-      "postalCode": 12,
+      "postalCode": 300001,
       "lga": [
         {
           "name": "Egor",
@@ -1018,7 +1018,7 @@
   {
     "state": {
       "name": "Ekiti State",
-      "postalCode": 13,
+      "postalCode": 360001,
       "lga": [
         {
           "name": "Efon",
@@ -1086,7 +1086,7 @@
   {
     "state": {
       "name": "Enugu State",
-      "postalCode": 14,
+      "postalCode": 400001,
       "lga": [
         {
           "name": "Awgu",
@@ -1157,24 +1157,24 @@
   },
   {
     "state": {
-      "name": "FCT",
-      "postalCode": 15,
+      "name": "Federal Capital Territory - Abuja",
+      "postalCode": 900001,
       "lga": [
         {
           "name": "Bwari",
-          "postalCode": 1
+          "postalCode": 901101
         },
         {
           "name": "Gwagwalada",
-          "postalCode": 2
+          "postalCode": 902101
         },
         {
           "name": "Kuje",
-          "postalCode": 3
+          "postalCode": 903101
         },
         {
           "name": "Kwali",
-          "postalCode": 4
+          "postalCode": 904101
         },
         {
           "name": "Municipal Area Council",
@@ -1186,7 +1186,7 @@
   {
     "state": {
       "name": "Gombe State",
-      "postalCode": 16,
+      "postalCode": 760001,
       "lga": [
         {
           "name": "Balanga",
@@ -1234,7 +1234,7 @@
   {
     "state": {
       "name": "Imo State",
-      "postalCode": 17,
+      "postalCode": 460001,
       "lga": [
         {
           "name": "Ahiazu Mbaise",
@@ -1346,7 +1346,7 @@
   {
     "state": {
       "name": "Jigawa State",
-      "postalCode": 18,
+      "postalCode": 720001,
       "lga": [
         {
           "name": "Babura",
@@ -1458,7 +1458,7 @@
   {
     "state": {
       "name": "Kaduna State",
-      "postalCode": 19,
+      "postalCode": 700001,
       "lga": [
         {
           "name": "Chikun",
@@ -1554,7 +1554,7 @@
   {
     "state": {
       "name": "Kano State",
-      "postalCode": 20,
+      "postalCode": 800001,
       "lga": [
         {
           "name": "Albasu",
@@ -1734,7 +1734,7 @@
   {
     "state": {
       "name": "Katsina State",
-      "postalCode": 21,
+      "postalCode": 820001,
       "lga": [
         {
           "name": "Batagarawa",
@@ -1874,7 +1874,7 @@
   {
     "state": {
       "name": "Kebbi State",
-      "postalCode": 22,
+      "postalCode": 860001,
       "lga": [
         {
           "name": "Arewa Dandi",
@@ -1962,7 +1962,7 @@
   {
     "state": {
       "name": "Kogi State",
-      "postalCode": 23,
+      "postalCode": 260001,
       "lga": [
         {
           "name": "Ajaokuta",
@@ -2006,7 +2006,7 @@
         },
         {
           "name": "Lokoja",
-          "postalCode": 11
+          "postalCode": 270001
         },
         {
           "name": "Mopa Muro",
@@ -2050,7 +2050,7 @@
   {
     "state": {
       "name": "Kwara State",
-      "postalCode": 24,
+      "postalCode": 240001,
       "lga": [
         {
           "name": "Baruten",
@@ -2118,8 +2118,12 @@
   {
     "state": {
       "name": "Lagos State",
-      "postalCode": 25,
+      "postalCode": 100001,
       "lga": [
+        {
+          "name": "Agege",
+          "postalCode": 100283
+        },
         {
           "name": "Ajeromi-Ifelodun",
           "postalCode": 1
@@ -2142,11 +2146,11 @@
         },
         {
           "name": "Epe",
-          "postalCode": 6
+          "postalCode": 106101
         },
         {
           "name": "Eti Osa",
-          "postalCode": 7
+          "postalCode": 101233
         },
         {
           "name": "Ibeju-Lekki",
@@ -2158,11 +2162,11 @@
         },
         {
           "name": "Ikeja",
-          "postalCode": 10
+          "postalCode": 900001
         },
         {
           "name": "Ikorodu",
-          "postalCode": 11
+          "postalCode": 104101
         },
         {
           "name": "Kosofe",
@@ -2202,7 +2206,7 @@
   {
     "state": {
       "name": "Nasarawa State",
-      "postalCode": 26,
+      "postalCode": 962001,
       "lga": [
         {
           "name": "Awe",
@@ -2258,7 +2262,7 @@
   {
     "state": {
       "name": "Niger State",
-      "postalCode": 27,
+      "postalCode": 920001,
       "lga": [
         {
           "name": "Agwara",
@@ -2362,7 +2366,7 @@
   {
     "state": {
       "name": "Ogun State",
-      "postalCode": 28,
+      "postalCode": 110001,
       "lga": [
         {
           "name": "Abeokuta South",
@@ -2446,7 +2450,7 @@
   {
     "state": {
       "name": "Ondo State",
-      "postalCode": 29,
+      "postalCode": 340001,
       "lga": [
         {
           "name": "Akoko North-West",
@@ -2522,7 +2526,7 @@
   {
     "state": {
       "name": "Osun State",
-      "postalCode": 30,
+      "postalCode": 230001,
       "lga": [
         {
           "name": "Atakunmosa West",
@@ -2646,7 +2650,7 @@
   {
     "state": {
       "name": "Oyo State",
-      "postalCode": 31,
+      "postalCode": 200001,
       "lga": [
         {
           "name": "Akinyele",
@@ -2782,7 +2786,7 @@
   {
     "state": {
       "name": "Plateau State",
-      "postalCode": 32,
+      "postalCode": 930001,
       "lga": [
         {
           "name": "Barkin Ladi",
@@ -2854,7 +2858,7 @@
   {
     "state": {
       "name": "Rivers State",
-      "postalCode": 33,
+      "postalCode": 500001,
       "lga": [
         {
           "name": "Ahoada East",
@@ -2938,7 +2942,7 @@
         },
         {
           "name": "Port Harcourt",
-          "postalCode": 21
+          "postalCode": 500001
         },
         {
           "name": "Tai",
@@ -2950,7 +2954,7 @@
   {
     "state": {
       "name": "Sokoto State",
-      "postalCode": 34,
+      "postalCode": 840001,
       "lga": [
         {
           "name": "Bodinga",
@@ -3046,7 +3050,7 @@
   {
     "state": {
       "name": "Taraba State",
-      "postalCode": 35,
+      "postalCode": 660001,
       "lga": [
         {
           "name": "Bali",
@@ -3114,7 +3118,7 @@
   {
     "state": {
       "name": "Yobe State",
-      "postalCode": 36,
+      "postalCode": 320001,
       "lga": [
         {
           "name": "Bursari",
@@ -3186,7 +3190,7 @@
   {
     "state": {
       "name": "Zamfara State",
-      "postalCode": 37,
+      "postalCode": 860001,
       "lga": [
         {
           "name": "Bakura",
