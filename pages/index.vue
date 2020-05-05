@@ -1,33 +1,39 @@
 <template>
-  <div
-    class="d-flex justify-content-center align-item-center min-vh-100 border-primary border-bottom text-center m-0 my-auto"
-  >
-    <div class="container border border-dark m-2">
-      <div class="p-2 p-md-5">
-        <div class="title h2 mb-5">Nigeria's Postal Code Finder</div>
-        {{ nigeria.state }}
+  <div class="d-flex justify-content-center align-items-center text-center min-vh-100 m-0 my-auto">
+    <div class="container m-2">
+      <div class="border border-dark p-2 p-md-5">
+        <div v-if="!postalCode" class="h2 mb-5">Nigeria's Postal Code Finder</div>
+        <div v-else class="h2 mb-5">Postal Code: {{postalCode}}</div>
+
         <div class="form-row p-0">
-          {{state}}
           <div class="col-12 col-md-6 mb-3">
-            <select id="state" class="form-control form-control-lg border-dark" required>
-              <option value disabled selected hidden>State</option>
-              <template v-for="item in nigeria">
-                <option
-                  :key="item.state.postalcode"
-                  :value="item.state.name"
-                >{{item.state.name}} / {{item.state.postalCode}}</option>
-                {{state = item.state}}
+            <select
+              required
+              id="state"
+              v-model="selectedState"
+              @change="clearVariables"
+              class="form-control form-control-lg border-dark"
+            >
+              <option value disabled selected hidden>Select State</option>
+              <template v-for="(states, index) in nigeria">
+                <option :key="index" :value="index">{{states.state.name}}</option>
               </template>
             </select>
           </div>
+
           <div class="col-12 col-md-6 mb-3">
-            <select id="lga" class="form-control form-control-lg border-dark" required>
-              <option value disabled selected hidden>L.G.A</option>
+            <select
+              id="lga"
+              required
+              v-model="postalCode"
+              class="form-control form-control-lg border-dark"
+            >
+              <option value disabled selected hidden>Select L.G.A</option>
               <option
-                v-for="lga in state.lga"
-                :key="lga.postalcode"
-                :value="lga.postalcode"
-              >{{lga.name}} / {{lga.postalCode}}</option>
+                v-for="(lga, index) in nigeria[+selectedState].state.lga"
+                :key="index"
+                :value="++index"
+              >{{lga.name}}</option>
             </select>
           </div>
         </div>
@@ -36,6 +42,7 @@
   </div>
 </template>
 
+
 <script>
 import nigeria from "~/assets/JSON/nigeria.json";
 
@@ -43,13 +50,19 @@ export default {
   data: function() {
     return {
       nigeria,
-      state: "",
-      lga: "",
-      output: ""
+      selectedState: "",
+      postalCode: ""
     };
+  },
+  methods: {
+    clearVariables() {
+      this.postalCode = "";
+      //this.postalCode = nigeria[this.selectedState]
+    }
   }
 };
 </script>
+
 
 <style>
 .border,
