@@ -4,7 +4,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: "Nigeria Postal Codes" || process.env.npm_package_name,
+    title: "Nigeria's Postal Code Look Up System" || process.env.npm_package_name,
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -62,7 +62,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   },
   generate: {
     fallback: true //Use '404.html' instead of the default '200.html'

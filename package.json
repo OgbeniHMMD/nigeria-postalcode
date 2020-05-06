@@ -1,7 +1,7 @@
 {
   "name": "postalcode",
-  "version": "0.0.2",
-  "description": "Nigeria&#39;s Postal Code Finder",
+  "version": "0.0.3",
+  "description": "Nigeria&#39;s Postal Code Look Up System",
   "author": "Olajide A. Hammed",
   "private": true,
   "scripts": {
